@@ -80,33 +80,33 @@ Keywords used to process transactions into categories automatically.
 
 ---
 
-## PROCESSOR_FILTERS
+## PROCESSOR_VIEWS
 
-User filters for generating summary data.
+User views for generating summary data.
 | Field | Datatype | Description |
 | ----------- | ----------- | ----------------------------------------- |
-| filter_id\* | int | unique filter id |
+| view_id\* | int | unique view id |
 | user_id | int | associated user (FK to USERS) |
-| filter_name | varchar(55) | filter_name |
+| view_name | varchar(55) | view name |
 
 ---
 
-## PROCESSOR_FILTERS_CATEGORIES
+## PROCESSOR_VIEWS_CATEGORIES
 
-Categories associated with each user filter.
+Categories associated with each user view.
 | Field | Datatype | Description |
 | ----------- | ----------- | ----------------------------------------- |
-| filter_id\* | int | associated filter (FK to PROCESSOR_FILTERS) |
+| view_id\* | int | associated view (FK to PROCESSOR_VIEWS) |
 | category_name\* | varchar(55) | category name |
 | aggregate | boolean | whether or not the category is an aggregate of other categories |
 
 ---
 
-## PROCESSOR_FILTERS_CATEGORIES_AGGREGATES
+## PROCESSOR_VIEWS_CATEGORIES_AGGREGATES
 
-Aggregate categories (if they exist) for groupings in filters.
+Aggregate categories (if they exist) for groupings in views.
 | Field | Datatype | Description |
 | ----------- | ----------- | ----------------------------------------- |
-| filter_id\* | int | associated filter (FK to PROCESSOR_FILTERS) |
+| view_id\* | int | associated view (FK to PROCESSOR_VIEWS) |
 | category_name\* | varchar(55) | category name |
 | aggregate_name\* | varchar(55) | category to be aggregated into filter's category |
