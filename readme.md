@@ -51,7 +51,7 @@ Headers for user bank CSV structure (used to standardize processing structure).
 | Field       | Datatype    | Description                               |
 | ----------- | ----------- | ----------------------------------------- |
 | bank_id\*   | int         | unique bank id                            |
-| user_id\*   | int         | associated user (FK to USERS)             |
+| user_id   | int         | associated user (FK to USERS)             |
 | date        | varchar(55) | bank csv name associated with date        |
 | description | varchar(55) | bank csv name associated with description |
 | amount      | varchar(55) | bank csv name associated with amount      |
