@@ -3,6 +3,7 @@
 This is the documentation for the sql portion of Banksy. This is meant to be used as a reference for building Banksy apps and understanding the data structure (there's not much to work with in Vercel's Postgres UI).
 
 - Need to switch category and aggregate names to ids
+- Waiting on 308 approval before making changes like bank headers
 
 # Processor Tables
 
